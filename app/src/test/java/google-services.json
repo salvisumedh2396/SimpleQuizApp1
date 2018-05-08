@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1067130680115",
+    "firebase_url": "https://simplequizapp-57fcc.firebaseio.com",
+    "project_id": "simplequizapp-57fcc",
+    "storage_bucket": "simplequizapp-57fcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067130680115:android:843ebc9ec0c3fdbd",
+        "android_client_info": {
+          "package_name": "com.example.android.simplequizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067130680115-j5jovs8r7a2k2do90hbi3eh2crlm2kbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.simplequizapp",
+            "certificate_hash": "8f7e4d0ed2f9c12b3cb007b50acbe74981aabb76"
+          }
+        },
+        {
+          "client_id": "1067130680115-h60e2ts8gj20kaq7f05ikicc55v9gb8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmOKFBqhsz_g2nYsfDyOSt66wtiTYd7Qw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067130680115-h60e2ts8gj20kaq7f05ikicc55v9gb8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

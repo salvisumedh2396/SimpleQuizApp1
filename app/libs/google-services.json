@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "209537351295",
+    "firebase_url": "https://udaquiz.firebaseio.com",
+    "project_id": "udaquiz",
+    "storage_bucket": "udaquiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209537351295:android:20a1495c00a3da16",
+        "android_client_info": {
+          "package_name": "com.example.android.udaquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209537351295-dbubse2fhgfh337ovht06fq1hi0qvkop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.udaquiz",
+            "certificate_hash": "8f7e4d0ed2f9c12b3cb007b50acbe74981aabb76"
+          }
+        },
+        {
+          "client_id": "209537351295-hdd8a1odrvk631s57hm284opv8mb4p27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM0ZABopHj0X9J8K_l65kzvMDpP3rptGA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209537351295-hdd8a1odrvk631s57hm284opv8mb4p27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
