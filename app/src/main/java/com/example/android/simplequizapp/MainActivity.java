@@ -29,7 +29,7 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int i;
+    private int i;  //here i is used to refer to the index position of the question and answers.
     private Context context;
     private int count = 0;
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference("questionBank");
 
-        final LinearLayout linearLayout = (LinearLayout) findViewById(R.id.main_linear_layout);
+        final LinearLayout linearLayout = findViewById(R.id.main_linear_layout);
 
         ref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -249,38 +249,42 @@ public class MainActivity extends AppCompatActivity {
                                 chbx2.setEnabled(false);
                                 chbx3.setEnabled(false);
                                 chbx4.setEnabled(false);
-                                if (chbx1.isChecked()) {
-                                    String text1 = chbx1.getText().toString();
-                                    if (text1.equals(ans1) || text1.equals(ans2)) {
-                                        count++;
-                                    }
+                                if(chbx1.isChecked() && chbx2.isChecked() && !chbx3.isChecked() && !chbx4.isChecked())
+                                {
+                                    if (chbx1.isChecked()) {
+                                        String text1 = chbx1.getText().toString().trim();
+                                        if (text1.equals(ans1) || text1.equals(ans2)) {
+                                            count++;
+                                        }
 
-                                }
-                                if (chbx2.isChecked()) {
-                                    String text1 = chbx2.getText().toString();
-                                    if (text1.equals(ans1) || text1.equals(ans2)) {
-                                        count++;
                                     }
+                                    if (chbx2.isChecked()) {
+                                        String text1 = chbx2.getText().toString().trim();
+                                        if (text1.equals(ans1) || text1.equals(ans2)) {
+                                            count++;
+                                        }
 
-                                }
-                                if (chbx3.isChecked()) {
-                                    String text1 = chbx3.getText().toString();
-                                    if (text1.equals(ans1) || text1.equals(ans2)) {
-                                        count++;
                                     }
+                                    if (chbx3.isChecked()) {
+                                        String text1 = chbx3.getText().toString().trim();
+                                        if (text1.equals(ans1) || text1.equals(ans2)) {
+                                            count++;
+                                        }
 
-                                }
-                                if (chbx4.isChecked()) {
-                                    String text1 = chbx4.getText().toString();
-                                    if (text1.equals(ans1) || text1.equals(ans2)) {
-                                        count++;
                                     }
+                                    if (chbx4.isChecked()) {
+                                        String text1 = chbx4.getText().toString().trim();
+                                        if (text1.equals(ans1) || text1.equals(ans2)) {
+                                            count++;
+                                        }
 
+                                    }
                                 }
+
                             }
                         });
 
-                    } else if (typ.equals("textinput")) {
+                    } else if (typ.equalsIgnoreCase("textinput")) {
                         final EditText edtxt1 = new EditText(context);
                         edtxt1.setTextColor(Color.WHITE);
                         edtxt1.setTextSize(20);
